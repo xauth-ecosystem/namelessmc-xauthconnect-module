@@ -13,16 +13,16 @@ A NamelessMC module offering secure OAuth2 authentication by integrating with XA
 
 - NamelessMC version 2.2.3 or higher
 - PHP 7.4 or higher
-- `newlandpe/oauth2-xauthconnect` library installed via Composer in your NamelessMC root directory.
+- `xauth/oauth2-xauthconnect` library installed via Composer in your NamelessMC root directory.
 - An active XAuthConnect server (e.g., `https://xauth-server.com`)
 - An XAuthConnect application configured with the correct Redirect URI.
 
 ## Installation
 
-1. **Install `newlandpe/oauth2-xauthconnect` library:**
+1. **Install `xauth/oauth2-xauthconnect` library:**
    Navigate to your NamelessMC root directory and run:
    ```bash
-   composer require newlandpe/oauth2-xauthconnect
+   composer require xauth/oauth2-xauthconnect
    ```
 
 2. **Upload Module Files:**
@@ -51,7 +51,7 @@ Once configured and enabled, users will see a "Login with XAuthConnect" option o
 
 - **Module not appearing:** Ensure all files from the `upload/` directory were copied correctly to your NamelessMC root.
 - **OAuth2 errors:** Double-check your Client ID, Client Secret, Issuer URL, and Redirect URI in both NamelessMC and your XAuthConnect application settings.
-- **Composer issues:** Ensure `newlandpe/oauth2-xauthconnect` is correctly installed via Composer.
+- **Composer issues:** Ensure `xauth/oauth2-xauthconnect` is correctly installed via Composer.
 - **NamelessMC logs:** Check your NamelessMC error logs for more detailed information.
 
 ## Contributing
@@ -69,4 +69,3 @@ Please make sure to update tests as appropriate and adhere to the existing codin
 ## License
 
 This module is licensed under the CSSM Unlimited License v2.0 (CSSM-ULv2). See the [LICENSE](LICENSE) file for details.
-
